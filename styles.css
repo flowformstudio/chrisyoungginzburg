@@ -136,6 +136,30 @@ button {
   align-items: center;
 }
 
+/* ── Stars ── */
+.hero__stars {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  animation: starTwinkle var(--dur, 3s) ease-in-out var(--delay, 0s) infinite;
+}
+
+@keyframes starTwinkle {
+  0%   { opacity: 0;    transform: scale(0.4) translateY(0); }
+  30%  { opacity: var(--peak, 0.75); transform: scale(1) translateY(-4px); }
+  60%  { opacity: var(--peak, 0.75); transform: scale(0.8) translateY(-2px); }
+  100% { opacity: 0;    transform: scale(0.3) translateY(-8px); }
+}
+
 .hero__portrait {
   position: absolute;
   inset: 0;
