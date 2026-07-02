@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Chris 50//Save the Date//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:chris50-20260912@chrisyoungginzburg.com
+DTSTAMP:20260702T120000Z
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Chris Young Ginzburg's 50th Birthday Celebration
+DESCRIPTION:Save the date! Chris turns 50. Celebration in Sebastopol\, California. Invitation and details to follow.
+LOCATION:Sebastopol\, California
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Chris's 50th is in one week!
+TRIGGER:-P7D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
