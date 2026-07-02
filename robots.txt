@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /save-the-date/
+
+Sitemap: https://www.chrisyoungginzburg.com/sitemap.xml
