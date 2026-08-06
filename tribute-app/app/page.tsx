@@ -2,7 +2,6 @@ import FloatingBackground from "@/components/FloatingBackground";
 import Hero from "@/components/Hero";
 import ShareCard from "@/components/ShareCard";
 import GiftSection from "@/components/GiftSection";
-import Timeline from "@/components/Timeline";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
       <Hero />
       <ShareCard />
       <GiftSection />
-      <Timeline />
       <Footer />
     </main>
   );

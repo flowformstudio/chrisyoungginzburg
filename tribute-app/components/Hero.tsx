@@ -29,6 +29,19 @@ export default function Hero() {
       </motion.h1>
 
       <motion.p
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.5, ease: [0.21, 0.47, 0.32, 0.98] }}
+        className="mt-7 inline-flex items-center gap-2.5 rounded-full border border-gold/40 bg-gold-soft/40 px-5 py-2.5 text-sm font-semibold text-espresso shadow-[0_8px_24px_-12px_rgba(201,162,75,0.5)] backdrop-blur-sm sm:text-base"
+      >
+        <span aria-hidden="true" className="h-2 w-2 rounded-full bg-terracotta" />
+        Please submit your video by{" "}
+        <time dateTime="2026-09-01" className="whitespace-nowrap text-terracotta">
+          September&nbsp;1
+        </time>
+      </motion.p>
+
+      <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.55, ease: [0.21, 0.47, 0.32, 0.98] }}
