@@ -32,8 +32,9 @@ const paragraphs = [
 export default function GiftSection() {
   return (
     <section
+      id="gift"
       aria-labelledby="gift-heading"
-      className="px-5 pt-20 sm:px-6 sm:pt-24"
+      className="scroll-mt-8 px-5 pt-20 sm:px-6 sm:pt-24"
     >
       <FadeIn className="mx-auto max-w-2xl text-center">
         <LotusIcon />

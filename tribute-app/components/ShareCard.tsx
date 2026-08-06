@@ -10,7 +10,11 @@ const ideas = [
 
 export default function ShareCard() {
   return (
-    <section aria-labelledby="share-heading" className="px-5 sm:px-6">
+    <section
+      id="share"
+      aria-labelledby="share-heading"
+      className="scroll-mt-8 px-5 sm:px-6"
+    >
       <FadeIn className="mx-auto max-w-2xl">
         <div className="rounded-3xl border border-gold-soft/60 bg-white/70 p-8 shadow-[0_24px_60px_-24px_rgba(61,47,36,0.18)] backdrop-blur-sm sm:p-12">
           <h2

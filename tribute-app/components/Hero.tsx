@@ -40,11 +40,37 @@ export default function Hero() {
       </motion.p>
 
       <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9, delay: 0.75, ease: [0.21, 0.47, 0.32, 0.98] }}
+        className="mt-10 flex w-full max-w-md flex-col items-stretch gap-3 sm:max-w-none sm:flex-row sm:justify-center sm:gap-4"
+      >
+        <motion.a
+          href="#share"
+          whileHover={{ scale: 1.02, y: -2 }}
+          whileTap={{ scale: 0.98 }}
+          transition={{ type: "spring", stiffness: 400, damping: 25 }}
+          className="flex items-center justify-center rounded-full bg-gradient-to-r from-terracotta to-clay px-8 py-3.5 text-base font-semibold text-cream shadow-[0_16px_36px_-12px_rgba(196,118,74,0.55)] outline-offset-4 focus-visible:outline-2 focus-visible:outline-terracotta"
+        >
+          Share Your Video
+        </motion.a>
+        <motion.a
+          href="#gift"
+          whileHover={{ scale: 1.02, y: -2 }}
+          whileTap={{ scale: 0.98 }}
+          transition={{ type: "spring", stiffness: 400, damping: 25 }}
+          className="flex items-center justify-center rounded-full border border-clay/40 bg-white/50 px-8 py-3.5 text-base font-semibold text-espresso backdrop-blur-sm outline-offset-4 focus-visible:outline-2 focus-visible:outline-clay"
+        >
+          Contribute to Her Gift
+        </motion.a>
+      </motion.div>
+
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2, delay: 1 }}
         aria-hidden="true"
-        className="mt-14 h-px w-24 bg-gradient-to-r from-transparent via-gold to-transparent"
+        className="mt-12 h-px w-24 bg-gradient-to-r from-transparent via-gold to-transparent"
       />
 
       <motion.div
