@@ -23,10 +23,7 @@ function LotusIcon() {
 }
 
 const paragraphs = [
-  "Many of you have asked if there’s a meaningful way to celebrate Chris beyond sharing a video.",
-  "One idea that feels especially fitting is to give something back to someone who spends so much of her life helping others heal.",
-  "We’re planning a peaceful weekend retreat where Chris can simply rest, recharge, and receive the same love and care she so generously gives to everyone else.",
-  "If you’d like to contribute toward this gift, we’d be incredibly grateful. Every contribution—large or small—will go directly toward making this retreat possible.",
+  "Many of you have asked for a meaningful way to celebrate Chris beyond sharing a video. We’re planning a peaceful weekend retreat where she can simply rest, recharge, and receive the same love and care she so generously gives to everyone else. If you’d like to contribute toward this gift — large or small — we’d be incredibly grateful.",
 ];
 
 export default function GiftSection() {
