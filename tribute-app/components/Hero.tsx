@@ -41,12 +41,12 @@ export default function Hero() {
             repeatDelay: 3.5,
             ease: "easeInOut",
           }}
-          className="inline-flex items-center gap-2"
+          className="inline-flex items-center gap-2 rounded-lg bg-gold-soft/50 px-3.5 py-1.5"
         >
           Please submit your video by{" "}
           <time
             dateTime="2026-09-01"
-            className="whitespace-nowrap border-b-2 border-gold/60 pb-0.5 text-terracotta"
+            className="whitespace-nowrap text-terracotta"
           >
             September&nbsp;1
           </time>

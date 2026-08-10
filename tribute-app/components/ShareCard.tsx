@@ -37,7 +37,7 @@ export default function ShareCard() {
             Please submit by{" "}
             <time
               dateTime="2026-09-01"
-              className="whitespace-nowrap border-b-2 border-gold/60 pb-0.5 text-terracotta"
+              className="whitespace-nowrap text-terracotta"
             >
               September&nbsp;1
             </time>
