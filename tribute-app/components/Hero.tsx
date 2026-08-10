@@ -1,8 +1,22 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+function useDaysLeft() {
+  const [label, setLabel] = useState<string | null>(null);
+  useEffect(() => {
+    const deadline = new Date(2026, 8, 1, 23, 59, 59);
+    const days = Math.ceil((deadline.getTime() - Date.now()) / 86_400_000);
+    if (days > 1) setLabel(`${days} days left`);
+    else if (days === 1) setLabel("last day to submit");
+    else setLabel(null);
+  }, []);
+  return label;
+}
+
 export default function Hero() {
+  const daysLeft = useDaysLeft();
   return (
     <header className="relative flex min-h-[70svh] flex-col items-center justify-center px-6 pb-16 pt-24 text-center sm:min-h-[75svh]">
       <motion.p
@@ -50,6 +64,17 @@ export default function Hero() {
           >
             September&nbsp;1
           </time>
+          {daysLeft && (
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              className="whitespace-nowrap"
+            >
+              &middot;&nbsp;
+              <strong className="font-bold text-espresso">{daysLeft}</strong>
+            </motion.span>
+          )}
         </motion.span>
       </motion.p>
 
