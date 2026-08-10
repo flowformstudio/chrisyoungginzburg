@@ -46,33 +46,62 @@ export function EmailButton() {
         <span className="h-px flex-1 bg-gold-soft/70" />
       </div>
 
-      <motion.a
-        href="mailto:ginzburgigor@gmail.com?subject=Video%20for%20Chris%27s%2050th"
-        whileHover={{ scale: 1.02, y: -2 }}
-        whileTap={{ scale: 0.98 }}
-        transition={{ type: "spring", stiffness: 400, damping: 25 }}
-        className="mt-5 flex w-full flex-col items-center justify-center gap-0.5 rounded-full border border-clay/40 bg-white/60 px-8 py-3.5 text-center outline-offset-4 focus-visible:outline-2 focus-visible:outline-clay"
-      >
-        <span className="flex items-center gap-2.5 text-lg font-semibold text-espresso">
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="h-5 w-5 text-terracotta"
-          >
-            <rect x="3" y="5" width="18" height="14" rx="2.5" />
-            <path d="m3.5 7 8.5 6 8.5-6" />
-          </svg>
-          Email Your Video
-        </span>
-        <span className="text-sm font-medium text-terracotta">
-          ginzburgigor@gmail.com
-        </span>
-      </motion.a>
+      <div className="mt-5 grid gap-3 sm:grid-cols-2 sm:gap-4">
+        <motion.a
+          href="mailto:ginzburgigor@gmail.com?subject=Video%20for%20Chris%27s%2050th"
+          whileHover={{ scale: 1.02, y: -2 }}
+          whileTap={{ scale: 0.98 }}
+          transition={{ type: "spring", stiffness: 400, damping: 25 }}
+          className="flex w-full flex-col items-center justify-center gap-0.5 rounded-full border border-clay/40 bg-white/60 px-6 py-3.5 text-center outline-offset-4 focus-visible:outline-2 focus-visible:outline-clay"
+        >
+          <span className="flex items-center gap-2 text-base font-semibold text-espresso sm:text-lg">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="h-5 w-5 shrink-0 text-terracotta"
+            >
+              <rect x="3" y="5" width="18" height="14" rx="2.5" />
+              <path d="m3.5 7 8.5 6 8.5-6" />
+            </svg>
+            Email Your Video
+          </span>
+          <span className="text-sm font-medium text-terracotta">
+            ginzburgigor@gmail.com
+          </span>
+        </motion.a>
+
+        <motion.a
+          href="sms:+14155398508"
+          whileHover={{ scale: 1.02, y: -2 }}
+          whileTap={{ scale: 0.98 }}
+          transition={{ type: "spring", stiffness: 400, damping: 25 }}
+          className="flex w-full flex-col items-center justify-center gap-0.5 rounded-full border border-clay/40 bg-white/60 px-6 py-3.5 text-center outline-offset-4 focus-visible:outline-2 focus-visible:outline-clay"
+        >
+          <span className="flex items-center gap-2 text-base font-semibold text-espresso sm:text-lg">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="h-5 w-5 shrink-0 text-terracotta"
+            >
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
+            </svg>
+            Text Your Video
+          </span>
+          <span className="text-sm font-medium text-terracotta">
+            (415)&nbsp;539-8508
+          </span>
+        </motion.a>
+      </div>
     </>
   );
 }
