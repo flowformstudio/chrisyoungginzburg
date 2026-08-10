@@ -30,7 +30,7 @@ export default function ShareCard() {
             id="share-heading"
             className="font-display text-3xl font-medium tracking-tight sm:text-4xl"
           >
-            Share Your Video
+            Be Part of Chris&rsquo;s Birthday Film
           </h2>
 
           <p className="mt-2.5 text-sm font-semibold tracking-wide text-cocoa sm:text-base">

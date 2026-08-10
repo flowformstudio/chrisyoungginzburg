@@ -77,7 +77,7 @@ export default function Hero() {
           transition={{ type: "spring", stiffness: 400, damping: 25 }}
           className="flex items-center justify-center rounded-full bg-gradient-to-r from-terracotta to-clay px-8 py-3.5 text-base font-semibold text-cream shadow-[0_16px_36px_-12px_rgba(196,118,74,0.55)] outline-offset-4 focus-visible:outline-2 focus-visible:outline-terracotta"
         >
-          Share Your Video
+          Add Your Video to the Film
         </motion.a>
         <motion.a
           href="#gift"
