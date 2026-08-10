@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,31271,t=>{t.q("/birthday-video/_next/static/media/venmo-qr.3n0n29wg1y82t.png")}]);

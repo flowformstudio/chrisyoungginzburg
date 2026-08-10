@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
-import chrisPhoto from "@/public/chris-50.webp";
 
 export default function Hero() {
   return (
@@ -61,9 +59,9 @@ export default function Hero() {
         transition={{ duration: 1, delay: 0.55, ease: [0.21, 0.47, 0.32, 0.98] }}
         className="mt-8 max-w-xl text-pretty text-lg leading-relaxed text-cocoa sm:text-xl"
       >
-        We&rsquo;re creating a surprise video filled with stories, memories,
-        gratitude, and birthday wishes from everyone whose life Chris has
-        touched.
+        We&rsquo;re creating a surprise video for Chris, and we&rsquo;d love
+        for you to be part of it. There&rsquo;s also an optional contribution
+        toward her gift, if it feels right to you.
       </motion.p>
 
       <motion.div
@@ -99,21 +97,6 @@ export default function Hero() {
         aria-hidden="true"
         className="mt-12 h-px w-24 bg-gradient-to-r from-transparent via-gold to-transparent"
       />
-
-      <motion.div
-        initial={{ opacity: 0, y: 32, scale: 0.98 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ duration: 1.1, delay: 0.85, ease: [0.21, 0.47, 0.32, 0.98] }}
-        className="mt-14 w-full max-w-md px-1 sm:max-w-lg"
-      >
-        <Image
-          src={chrisPhoto}
-          alt="Chris seated beside large number 50, surrounded by roses and hydrangeas in soft golden light"
-          priority
-          sizes="(max-width: 640px) 92vw, 512px"
-          className="w-full rounded-[2rem] shadow-[0_32px_80px_-28px_rgba(61,47,36,0.35)] ring-1 ring-gold-soft/60 sm:rounded-[2.5rem]"
-        />
-      </motion.div>
     </header>
   );
 }

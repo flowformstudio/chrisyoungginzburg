@@ -1,26 +1,7 @@
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 import VenmoCard from "./VenmoCard";
-
-function LotusIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 48 32"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="mx-auto h-8 w-12 text-gold"
-    >
-      <path d="M24 28c-3.5-3-5.5-7.5-5.5-12S20.5 6.5 24 3.5c3.5 3 5.5 7.5 5.5 12S27.5 25 24 28Z" />
-      <path d="M24 28c-5-.5-9.5-3-12.5-7 1.5-1.2 3.2-2 5-2.5" />
-      <path d="M24 28c5-.5 9.5-3 12.5-7-1.5-1.2-3.2-2-5-2.5" />
-      <path d="M24 28c-7 0-13.5-2-18-5.5 2-2.5 4.7-4.3 7.7-5.3" />
-      <path d="M24 28c7 0 13.5-2 18-5.5-2-2.5-4.7-4.3-7.7-5.3" />
-    </svg>
-  );
-}
+import giftBanner from "@/public/gift-banner.webp";
 
 const paragraphs = [
   "Many of you have asked for a meaningful way to celebrate Chris beyond sharing a video. We’re planning a peaceful weekend retreat where she can simply rest, recharge, and receive the same love and care she so generously gives to everyone else. If you’d like to contribute toward this gift — large or small — we’d be incredibly grateful.",
@@ -34,10 +15,15 @@ export default function GiftSection() {
       className="scroll-mt-8 px-5 pt-20 sm:px-6 sm:pt-24"
     >
       <FadeIn className="mx-auto max-w-2xl text-center">
-        <LotusIcon />
+        <Image
+          src={giftBanner}
+          alt="Chris in a sun hat gazing over a calm sea from a peaceful terrace at golden hour"
+          sizes="(max-width: 672px) 100vw, 672px"
+          className="w-full rounded-3xl shadow-[0_24px_60px_-24px_rgba(61,47,36,0.3)] ring-1 ring-gold-soft/60"
+        />
         <h2
           id="gift-heading"
-          className="font-display mt-5 text-balance text-3xl font-medium tracking-tight sm:text-4xl"
+          className="font-display mt-10 text-balance text-3xl font-medium tracking-tight sm:text-4xl"
         >
           Help Give Chris a Weekend of Rest
         </h2>
