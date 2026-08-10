@@ -51,6 +51,16 @@ export default function ShareCard() {
 
           <UploadButton />
 
+          <p className="mt-5 text-center text-sm leading-relaxed text-cocoa sm:text-base">
+            Prefer email? Send your video to{" "}
+            <a
+              href="mailto:ginzburgigor@gmail.com?subject=Video%20for%20Chris%27s%2050th"
+              className="whitespace-nowrap font-semibold text-terracotta underline decoration-gold/60 decoration-2 underline-offset-4 outline-offset-4 focus-visible:outline-2 focus-visible:outline-terracotta"
+            >
+              ginzburgigor@gmail.com
+            </a>
+          </p>
+
           <p className="mt-6 text-center text-sm leading-relaxed text-cocoa">
             Thank you for helping make Chris&rsquo;s 50th birthday
             unforgettable.
