@@ -24,6 +24,16 @@ export default function ShareCard() {
             Share Your Video
           </h2>
 
+          <p className="mt-2.5 text-sm font-semibold tracking-wide text-cocoa sm:text-base">
+            Please submit by{" "}
+            <time
+              dateTime="2026-09-01"
+              className="whitespace-nowrap border-b-2 border-gold/60 pb-0.5 text-terracotta"
+            >
+              September&nbsp;1
+            </time>
+          </p>
+
           <p className="mt-4 text-base leading-relaxed text-cocoa sm:text-lg">
             Record a short video —{" "}
             <strong className="font-semibold text-espresso">
