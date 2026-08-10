@@ -33,3 +33,46 @@ export default function UploadButton() {
     </motion.a>
   );
 }
+
+export function EmailButton() {
+  return (
+    <>
+      <div
+        aria-hidden="true"
+        className="mt-5 flex items-center gap-4 px-2 text-xs font-medium uppercase tracking-[0.25em] text-clay"
+      >
+        <span className="h-px flex-1 bg-gold-soft/70" />
+        or
+        <span className="h-px flex-1 bg-gold-soft/70" />
+      </div>
+
+      <motion.a
+        href="mailto:ginzburgigor@gmail.com?subject=Video%20for%20Chris%27s%2050th"
+        whileHover={{ scale: 1.02, y: -2 }}
+        whileTap={{ scale: 0.98 }}
+        transition={{ type: "spring", stiffness: 400, damping: 25 }}
+        className="mt-5 flex w-full flex-col items-center justify-center gap-0.5 rounded-full border border-clay/40 bg-white/60 px-8 py-3.5 text-center outline-offset-4 focus-visible:outline-2 focus-visible:outline-clay"
+      >
+        <span className="flex items-center gap-2.5 text-lg font-semibold text-espresso">
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="h-5 w-5 text-terracotta"
+          >
+            <rect x="3" y="5" width="18" height="14" rx="2.5" />
+            <path d="m3.5 7 8.5 6 8.5-6" />
+          </svg>
+          Email Your Video
+        </span>
+        <span className="text-sm font-medium text-terracotta">
+          ginzburgigor@gmail.com
+        </span>
+      </motion.a>
+    </>
+  );
+}

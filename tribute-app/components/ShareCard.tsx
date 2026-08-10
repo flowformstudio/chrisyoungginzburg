@@ -1,5 +1,5 @@
 import FadeIn from "./FadeIn";
-import UploadButton from "./UploadButton";
+import UploadButton, { EmailButton } from "./UploadButton";
 
 const ideas = [
   "How do you know Chris?",
@@ -25,11 +25,17 @@ export default function ShareCard() {
           </h2>
 
           <p className="mt-4 text-base leading-relaxed text-cocoa sm:text-lg">
-            Please record a video between{" "}
+            Record a short video —{" "}
             <strong className="font-semibold text-espresso">
-              30 seconds and 2 minutes
-            </strong>
-            . Speak from the heart — a phone selfie video is perfect.
+              ideally under 2 minutes
+            </strong>{" "}
+            — and we&rsquo;ll use it in the birthday film. Speak from the heart;
+            a phone selfie video is perfect.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-cocoa sm:text-base">
+            Went a little long? No worries — the final film will be edited, so
+            we may use parts of it, but Chris will see your full video no
+            matter what.
           </p>
 
           <p className="mt-8 text-sm font-medium uppercase tracking-[0.2em] text-clay">
@@ -50,16 +56,7 @@ export default function ShareCard() {
           </ul>
 
           <UploadButton />
-
-          <p className="mt-5 text-center text-sm leading-relaxed text-cocoa sm:text-base">
-            Prefer email? Send your video to{" "}
-            <a
-              href="mailto:ginzburgigor@gmail.com?subject=Video%20for%20Chris%27s%2050th"
-              className="whitespace-nowrap font-semibold text-terracotta underline decoration-gold/60 decoration-2 underline-offset-4 outline-offset-4 focus-visible:outline-2 focus-visible:outline-terracotta"
-            >
-              ginzburgigor@gmail.com
-            </a>
-          </p>
+          <EmailButton />
 
           <p className="mt-6 text-center text-sm leading-relaxed text-cocoa">
             Thank you for helping make Chris&rsquo;s 50th birthday
