@@ -4,7 +4,7 @@
   const container = document.querySelector('.hero__stars');
   if (!container) return;
 
-  const COUNT = 38;
+  const COUNT = window.innerWidth < 640 ? 14 : 24;
   const TINTS = [
     { fill: '#ffffff', glow: 'rgba(255,230,160,0.6)' },
     { fill: '#ffe3b0', glow: 'rgba(255,210,130,0.65)' },
@@ -14,7 +14,7 @@
   for (let i = 0; i < COUNT; i++) {
     const star = document.createElement('span');
     star.className = 'star';
-    const size = 2 + Math.random() * 3;          // 2–5px
+    const size = 1.5 + Math.random() * 2.5;      // 1.5–4px
     const x    = Math.random() * 100;             // % across
     const y    = Math.random() * 100;             // % down
     const dur  = 2.5 + Math.random() * 3.5;      // 2.5–6s
