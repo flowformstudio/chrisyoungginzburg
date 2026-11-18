@@ -3,13 +3,6 @@ import FadeIn from "./FadeIn";
 import UploadButton, { EmailButton } from "./UploadButton";
 import chrisBanner from "@/public/chris-banner.webp";
 
-const ideas = [
-  "How do you know Chris?",
-  "What’s your favorite memory together?",
-  "How has Chris touched or changed your life?",
-  "What birthday wish would you like to share?",
-];
-
 export default function ShareCard() {
   return (
     <section
@@ -34,45 +27,43 @@ export default function ShareCard() {
           </h2>
 
           <p className="mt-2.5 text-sm font-semibold tracking-wide text-cocoa sm:text-base">
-            Please submit by{" "}
+            Ideally by{" "}
             <time
-              dateTime="2026-09-01"
+              dateTime="2026-09-06"
               className="whitespace-nowrap text-terracotta"
             >
-              September&nbsp;1
+              September&nbsp;6
             </time>
           </p>
 
           <p className="mt-4 text-base leading-relaxed text-cocoa sm:text-lg">
-            Record a short video —{" "}
+            We&rsquo;re putting together a video that will be{" "}
             <strong className="font-semibold text-espresso">
-              ideally under 2 minutes
-            </strong>{" "}
-            — and we&rsquo;ll use it in the birthday film. Speak from the heart;
-            a phone selfie video is perfect.
+              screened privately for Chris
+            </strong>
+            , and I&rsquo;d love you in it.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-cocoa sm:text-base">
-            Went a little long? No worries — the final film will be edited, so
-            we may use parts of it, but Chris will see your full video no
-            matter what.
+            This is a private film for Chris only — it won&rsquo;t be posted
+            online or shared publicly.
+          </p>
+
+          <p className="mt-6 text-base leading-relaxed text-cocoa sm:text-lg">
+            Record a quick message answering one question:
+          </p>
+          <p className="mt-4 text-center font-display text-2xl font-medium tracking-tight text-espresso sm:text-3xl">
+            &ldquo;Who is Chris to you?&rdquo;
+          </p>
+
+          <p className="mt-6 text-base leading-relaxed text-cocoa sm:text-lg">
+            One word, a sentence, funny, sweet, emotional. Whatever comes
+            naturally. Don&rsquo;t overthink it!{" "}
+            <span aria-hidden="true">❤️</span>
           </p>
 
           <p className="mt-8 text-sm font-medium uppercase tracking-[0.2em] text-clay">
-            Some ideas
+            Send it any of these ways
           </p>
-          <ul className="mt-4 space-y-3">
-            {ideas.map((idea) => (
-              <li key={idea} className="flex items-start gap-3">
-                <span
-                  aria-hidden="true"
-                  className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-gold"
-                />
-                <span className="text-base leading-relaxed text-espresso/90 sm:text-lg">
-                  {idea}
-                </span>
-              </li>
-            ))}
-          </ul>
 
           <UploadButton />
           <EmailButton />

@@ -4,7 +4,8 @@ import VenmoCard from "./VenmoCard";
 import giftBanner from "@/public/gift-banner.webp";
 
 const paragraphs = [
-  "We’re planning to gift Chris a peaceful weekend retreat where she can simply rest, recharge, and receive the love she so generously gives. Any contribution — large or small — means the world.",
+  "We’re collecting contributions toward a peaceful weekend retreat for Chris.",
+  "A chance for her to rest, recharge, and receive the same love she gives so freely. Every gift counts, big or small.",
 ];
 
 export default function GiftSection() {

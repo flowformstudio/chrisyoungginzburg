@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import venmoQr from "@/public/venmo-qr.png";
 
-const VENMO_URL = "https://venmo.com/Igorginzburg";
+const VENMO_URL = "https://account.venmo.com/u/Igorginzburg";
 
 export default function VenmoCard() {
   return (
