@@ -58,7 +58,13 @@
         "mainEntity": { "@id": "https://www.chrisyoungginzburg.com/#chris" },
         "about": { "@id": "https://www.chrisyoungginzburg.com/#chris" },
         "primaryImageOfPage": { "@id": "https://www.chrisyoungginzburg.com/#portrait" },
-        "dateModified": "2026-11-13"
+        "dateModified": "2026-11-25",
+        "hasPart": {
+          "@type": "WebPage",
+          "@id": "https://www.chrisyoungginzburg.com/temple-of-expression/#webpage",
+          "url": "https://www.chrisyoungginzburg.com/temple-of-expression/",
+          "name": "Temple of Expression"
+        }
       },
       {
         "@type": "ImageObject",
@@ -157,6 +163,14 @@
           },
           {
             "@type": "Question",
+            "name": "What is Temple of Expression?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Temple of Expression is a family-friendly community talent showcase and ceremonial performance experience hosted by Chris in Sebastopol, California. Performers of all experience levels share short acts of dance, music, spoken word, theater, and more. A new event is coming in 2027; see https://www.chrisyoungginzburg.com/temple-of-expression/ for details and how to apply to perform."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "Where can I book a sound healing session with Chris?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -172,7 +186,7 @@
   <link rel="preload" href="/fonts/bellefair-400-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/manrope-var-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/fonts/fonts.css" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
   <header class="site-header">
@@ -185,6 +199,7 @@
       <nav class="site-nav" id="siteNav">
         <a href="#about">About</a>
         <a href="#highlights">Highlights</a>
+        <a href="/temple-of-expression/">Temple of Expression</a>
         <a href="#healing">Healing Work</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
@@ -282,6 +297,25 @@
       </div>
     </section>
 
+    <section class="section" id="temple">
+      <div class="container feature">
+        <a class="feature__image" href="/temple-of-expression/" tabindex="-1" aria-hidden="true">
+          <img src="img/temple-logo.jpg" width="1536" height="1024" alt="" loading="lazy" decoding="async" />
+        </a>
+        <div>
+          <p class="section-tag">Community Showcase</p>
+          <h2>Temple of Expression</h2>
+          <p>
+            A family-friendly community performance evening for dance, music, spoken word, theater, and creative expression,
+            hosted by Chris in Sebastopol. A new Temple of Expression event is coming in 2027.
+          </p>
+          <div class="feature__actions">
+            <a class="button button--primary" href="/temple-of-expression/">Explore Temple of Expression</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section section--dusk" id="healing">
       <div class="container callout">
         <div>
@@ -326,6 +360,10 @@
             <p>Yes. Chris teaches and collaborates across disciplines, sharing hip hop forms with cultural care, clarity, and somatic awareness. For teaching, performances, or collaborations, email <a href="mailto:Fluidgirlproductions@gmail.com">Fluidgirlproductions@gmail.com</a>.</p>
           </details>
           <details class="faq__item">
+            <summary>What is Temple of Expression?</summary>
+            <p>Temple of Expression is a family-friendly community talent showcase and ceremonial performance experience hosted by Chris in Sebastopol, California. Performers of all experience levels share short acts of dance, music, spoken word, theater, and more. A new event is coming in 2027; see the <a href="/temple-of-expression/">Temple of Expression page</a> for details and how to apply to perform.</p>
+          </details>
+          <details class="faq__item">
             <summary>Where can I book a sound healing session with Chris?</summary>
             <p>Chris's sound healing practice is Grove Circle Healing, which offers private sessions, group events, retreats, and corporate wellness. Visit <a href="https://www.grovecirclehealing.com/" target="_blank" rel="noopener">grovecirclehealing.com</a> to learn more and book.</p>
           </details>
@@ -359,7 +397,7 @@
     </div>
   </footer>
 
-  <script src="script.js?v=2" defer></script>
+  <script src="script.js?v=3" defer></script>
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };

@@ -30,6 +30,10 @@ Leave `robots.txt` and `sitemap.xml` as they are unless you add a public page (t
 - `820c2d0b42b0d1c2b1331fb1c978cd61.txt` (IndexNow key),
 - `vercel.json` (security/cache headers and the noindex header for the private pages).
 
+## Temple of Expression page
+
+`temple-of-expression/index.html` (URL `/temple-of-expression/`) is Chris's community talent showcase page. It moved here from grovecirclehealing.com on 2026-11-25; the old address there forwards to it. When the next Temple date is set, update in the same commit: the "Upcoming Event" section, the page's JSON-LD (`EventSeries`, add a `subEvent` with the date), the home page Temple section and FAQ answer (+ `FAQPage` JSON-LD), and the "Upcoming events" list in `llms.txt`. On grovecirclehealing.com the Events page still lists the Temple; keep that entry in step too.
+
 ## Private pages
 
 - `/save-the-date/` and `/birthday-video/` stay hidden from search (noindex header in `vercel.json`). Don't link them from the main page or the sitemap.

@@ -36,7 +36,7 @@
 
 (function scrollReveal() {
   const targets = document.querySelectorAll(
-    '.two-column > *, .cards .card, .callout > *, .contact > *'
+    '.two-column > *, .cards .card, .callout > *, .contact > *, .feature > *, .temple-split > *'
   );
   if (!targets.length || !('IntersectionObserver' in window)) return;
 
