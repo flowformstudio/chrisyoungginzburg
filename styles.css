@@ -178,16 +178,6 @@ button {
   animation: heroSettle 2.4s var(--ease) both;
 }
 
-/* Larger screens: show the photo a little wider than the screen, anchored left,
-   so Chris's face sits to the right of the name instead of under it. */
-@media (min-width: 641px) {
-  .hero__portrait {
-    right: auto;
-    width: 122%;
-    object-position: 0% 25%;
-  }
-}
-
 @keyframes heroSettle {
   from { transform: scale(1.045); opacity: 0.6; }
   to   { transform: scale(1); opacity: 1; }
@@ -698,6 +688,29 @@ p {
 .reveal.in-view {
   opacity: 1;
   transform: none;
+}
+
+/* Larger screens: show the photo a little wider than the screen, anchored left,
+   so Chris's face sits to the right of the name instead of under it. */
+@media (min-width: 641px) {
+  .hero__portrait {
+    right: auto;
+    width: 122%;
+    object-position: 0% 25%;
+  }
+
+  /* Keep the name, gold line and intro on the left half, clear of Chris's face. */
+  .hero h1 {
+    font-size: clamp(3rem, 5.4vw, 5.6rem);
+  }
+
+  .hero .flow-line {
+    width: min(100%, 420px, 40vw);
+  }
+
+  .hero__lede {
+    max-width: min(560px, 48vw);
+  }
 }
 
 /* ── Responsive ── */
