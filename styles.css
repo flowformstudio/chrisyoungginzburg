@@ -558,6 +558,19 @@ p {
 }
 
 /* FAQ: a quiet list, not boxes */
+.faq__photo {
+  display: block;
+  max-width: 420px;
+  margin-top: clamp(1.8rem, 3vw, 2.6rem);
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.faq__photo img {
+  width: 100%;
+  height: auto;
+}
+
 .faq {
   border-top: 1px solid var(--line);
 }

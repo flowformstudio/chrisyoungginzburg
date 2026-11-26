@@ -178,7 +178,7 @@
   <link rel="preload" href="/fonts/bellefair-400-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/manrope-var-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/fonts/fonts.css" />
-  <link rel="stylesheet" href="styles.css?v=7" />
+  <link rel="stylesheet" href="styles.css?v=8" />
 </head>
 <body>
   <header class="site-header">
@@ -329,6 +329,15 @@
         <div>
           <p class="section-tag">Questions</p>
           <h2>About Chris, in brief.</h2>
+          <picture class="faq__photo">
+            <source type="image/avif" sizes="(max-width: 640px) 90vw, 420px"
+              srcset="img/chris-halo-500.avif 500w, img/chris-halo-800.avif 800w, img/chris-halo-1000.avif 1000w" />
+            <source type="image/webp" sizes="(max-width: 640px) 90vw, 420px"
+              srcset="img/chris-halo-500.webp 500w, img/chris-halo-800.webp 800w, img/chris-halo-1000.webp 1000w" />
+            <img src="img/chris-halo-1000.jpg" width="1000" height="950"
+              alt="Chris Young-Ginzburg in a golden halo headpiece and black fringe top, mid-movement against a sunset sky"
+              loading="lazy" decoding="async" />
+          </picture>
         </div>
         <div class="faq">
           <details class="faq__item">
