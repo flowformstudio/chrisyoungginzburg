@@ -178,6 +178,16 @@ button {
   animation: heroSettle 2.4s var(--ease) both;
 }
 
+/* Larger screens: show the photo a little wider than the screen, anchored left,
+   so Chris's face sits to the right of the name instead of under it. */
+@media (min-width: 641px) {
+  .hero__portrait {
+    right: auto;
+    width: 122%;
+    object-position: 0% 25%;
+  }
+}
+
 @keyframes heroSettle {
   from { transform: scale(1.045); opacity: 0.6; }
   to   { transform: scale(1); opacity: 1; }
