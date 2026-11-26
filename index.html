@@ -178,7 +178,7 @@
   <link rel="preload" href="/fonts/bellefair-400-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/manrope-var-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/fonts/fonts.css" />
-  <link rel="stylesheet" href="styles.css?v=8" />
+  <link rel="stylesheet" href="styles.css?v=12" />
 </head>
 <body>
   <header class="site-header">
@@ -309,7 +309,7 @@
     </section>
 
     <section class="section section--dusk" id="healing">
-      <div class="container callout">
+      <div class="container callout callout--photo">
         <div>
           <p class="section-tag">Beyond Performance</p>
           <h2>Explore Chris's healing practice.</h2>
@@ -317,19 +317,33 @@
             Chris's work in sound healing and holistic care lives alongside her work as a performer. If you're looking for her
             healing practice, offerings, or deeper wellness work, continue to Grove Circle Healing.
           </p>
+          <a class="button button--primary" href="https://www.grovecirclehealing.com/" target="_blank" rel="noopener">
+            Go to Grove Circle Healing
+          </a>
         </div>
-        <a class="button button--primary" href="https://www.grovecirclehealing.com/" target="_blank" rel="noopener">
-          Go to Grove Circle Healing
-        </a>
+        <figure class="callout__photo">
+          <picture>
+            <source type="image/avif" sizes="360px"
+              srcset="img/chris-sound-bowls-600.avif 600w, img/chris-sound-bowls-900.avif 900w, img/chris-sound-bowls-1040.avif 1040w" />
+            <source type="image/webp" sizes="360px"
+              srcset="img/chris-sound-bowls-600.webp 600w, img/chris-sound-bowls-900.webp 900w, img/chris-sound-bowls-1040.webp 1040w" />
+            <img src="img/chris-sound-bowls-1040.jpg" width="1040" height="1073"
+              alt="Chris Young-Ginzburg holding a singing bowl beside a table of crystal singing bowls at an outdoor sound bath"
+              loading="lazy" decoding="async" />
+          </picture>
+          <figcaption class="photo-credit">Photo: Danny Lewis Photography</figcaption>
+        </figure>
       </div>
     </section>
 
     <section class="section section--accent" id="faq">
-      <div class="container two-column">
-        <div>
+      <div class="container two-column faq-layout">
+        <div class="faq-layout__head">
           <p class="section-tag">Questions</p>
           <h2>About Chris, in brief.</h2>
-          <picture class="faq__photo">
+        </div>
+        <figure class="faq__photo">
+          <picture>
             <source type="image/avif" sizes="(max-width: 640px) 90vw, 420px"
               srcset="img/chris-halo-500.avif 500w, img/chris-halo-800.avif 800w, img/chris-halo-1000.avif 1000w" />
             <source type="image/webp" sizes="(max-width: 640px) 90vw, 420px"
@@ -338,7 +352,8 @@
               alt="Chris Young-Ginzburg in a golden halo headpiece and black fringe top, mid-movement against a sunset sky"
               loading="lazy" decoding="async" />
           </picture>
-        </div>
+          <figcaption class="photo-credit">Photo: Cristie Kiley</figcaption>
+        </figure>
         <div class="faq">
           <details class="faq__item">
             <summary>Who is Chris Young-Ginzburg?</summary>
